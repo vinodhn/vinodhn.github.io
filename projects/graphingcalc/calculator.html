@@ -38,27 +38,27 @@
                <h5> Graphing Options </h5>
                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="holes">
                <input type="checkbox" id="holes" name="holes" class="mdl-checkbox__input">
-               <span class="mdl-checkbox__label">Holes and Discontinuities</span>
+               <span class="mdl-checkbox__label">Removable Discontinuities (Rational f(x) only)</span>
                </label>
                <div class="margin"></div>
-               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="fprime">
-               <input type="checkbox" id="fprime" name="fprime" class="mdl-checkbox__input">
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="first">
+               <input type="checkbox" id="first" name="first" class="mdl-checkbox__input">
                <span class="mdl-checkbox__label">First Derivative [f'(x)]</span>
                </label>
                <div class="margin"></div>
-               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="f2prime">
-               <input type="checkbox" id="f2prime" name="f2prime" class="mdl-checkbox__input">
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="second">
+               <input type="checkbox" id="second" name="second" class="mdl-checkbox__input">
                <span class="mdl-checkbox__label">Second Derivative [f''(x)]</span>
                </label>
                <div class="margin"></div>
-               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="minmax">
-               <input type="checkbox" id="minmax" name="minmax" class="mdl-checkbox__input">
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="extrema">
+               <input type="checkbox" id="extrema" name="extrema" class="mdl-checkbox__input">
                <span class="mdl-checkbox__label">Relative Extrema [f'(x)=0]</span>
                </label>
                <div class="margin"></div>
                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="poi">
                <input type="checkbox" id="poi" name="poi" class="mdl-checkbox__input">
-               <span class="mdl-checkbox__label">Points of inflection(s) [f''(x)=0]</span>
+               <span class="mdl-checkbox__label">Point(s) of inflection [f''(x)=0]</span>
                </label>
                <div class="margin"></div>
                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="ftc">
@@ -83,12 +83,12 @@
                   </div>
                </form>
              </div>
-               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="Draw()">Go!</button>
+               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="buttonClick()">Go!</button>
             </center>
          </div>
          <div class="columnRight">
             <center>
-               <canvas id="xy-graph" width="1460" height="800"></canvas>
+               <canvas id="graph" width="800" height="800"></canvas>
             </center>
          </div>
       </div>
@@ -108,6 +108,6 @@
          <div class="mdl-snackbar__text"></div>
          <button class="mdl-snackbar__action" type="button"></button>
       </div>
-      <script type="text/javascript" src="./canvasJS.js"></script>
+      <script type="text/javascript" src="./calculator.js"></script>
    </body>
 </html>

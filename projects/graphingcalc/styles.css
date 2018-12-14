@@ -27,11 +27,12 @@ canvas {
 .columnLeft{
   float: left;
   width: 400px;
+  height: auto;
   padding: 10px;
 }
 
 .columnRight{
-  float: left;
+  float: center;
   width: 1480;
   height: 1000;
   padding: 10px;
