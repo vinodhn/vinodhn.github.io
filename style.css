@@ -102,3 +102,7 @@ a{
         padding-top: 2rem;
     }
 }
+
+img {
+    border-radius:50%;
+}
