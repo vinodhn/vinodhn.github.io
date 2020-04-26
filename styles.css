@@ -1,0 +1,162 @@
+/* General Stuff */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #272829;
+  background-color: #413c3b;
+}
+  
+h1, h3{
+  font-family: "Raleway", sans-serif;
+}
+
+#main {
+  margin-left: 300px;
+}
+
+/* Header Stuff */
+#header {
+  position:fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: #413c3b;
+}
+
+#header .profile img {
+  margin: 15px auto;
+  display: block;
+  width: 120px;
+  border: 5px solid #8ca26c
+}
+
+#header .profile h3 {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  text-align-last: center;
+  color: #fff;
+}
+
+#header .media-links a{
+  font-size: 18px;
+  display: inline-block;
+  background: #8ca26c;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.5s;
+}
+
+#header .profile .media-links a:hover {
+  background: #c0cb6f;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Nav Menu */
+.menu {
+  padding-top: 20px;
+}
+
+.menu * {
+  list-style: none;
+}
+
+.menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 12px 15px;
+  margin-bottom: 5px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.menu a i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: #8ca26c;
+}
+
+.menu a:hover, .menu .active > a, .menu li:hover > a {
+  text-decoration: none;
+  color: #c0cb6f;
+}
+  
+.menu a:hover i, .menu .active > a i, .menu li:hover > a i {
+  color: #c0cb6f;
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle i {
+  color: #149ddd;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: #fff;
+}
+
+/* Hero */
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("hero-bg.jpg") center;
+  background-size: cover;
+  opacity: 1;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #413c3b;
+}
+
+#hero p {
+  color: #413c3b;
+  margin-bottom: 50px;
+  font-size: 26px;
+}
+
+/* About */
+#about {
+  width: 100%;
+  height: 100vh;
+  background-color: #413c3b;
+  opacity: 0;
+}
