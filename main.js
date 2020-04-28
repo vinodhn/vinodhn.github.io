@@ -32,6 +32,9 @@ function animateActiveSection(){
 }
 
 $(function(){
+  AOS.init({
+    duration: 1000
+  });
   $(window).scroll(function() {
       smoothTransitions();
       animateActiveSection();

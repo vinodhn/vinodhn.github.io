@@ -12,13 +12,16 @@
         <link href="styles.css" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link href="icofont/icofont.min.css" rel="stylesheet">
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
         <title>Vinodh N.</title>
     </head>
 
     <body>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
@@ -39,7 +42,7 @@
 
                     <nav class="menu">
                         <ul>
-                            <li class="active"><a href="index.html"><i class="bx bx-home-alt"></i>Home</a></li>
+                            <li class="active"><a href="#hero"><i class="bx bx-home-alt"></i>Home</a></li>
                             <li><a href="#about"><i class="bx bx-info-circle"></i>About</a></li>
                             <li><a href="#projects"><i class="bx bx-briefcase"></i>Projects</a></li>
                             <li><a href="#resume"><i class="bx bx-file"></i>Resume</a></li>
@@ -47,7 +50,6 @@
                         </ul>
                     </nav>
 
-                <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
             </div>
         </div>
         </header>
@@ -56,7 +58,7 @@
             <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
                 <div class="hero-container">
                 <h1>Hi, I'm Vinodh!</h1>
-                <p>I'm a hardworking, dedicated student with a passion for mobile development.</p>
+                <p>I'm a hardworking, dedicated student with a passion for development.</p>
                 </div>
             </section>
 
@@ -66,17 +68,17 @@
                     <h3>About Me</h3>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-4">
+                <div class="row" data-aos="fade-left">
+                    <div class="col-lg-3">
                         <img src="profile-img.jpg" class="img-fluid prof-pic-rounded">
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-9">
                         <h3>Mathematics + Computer Science Student</h3>
                         <p class="font-italic">
                             Studying in the College of Liberal Arts and Sciences at UIUC
                         </p>
                         <p>
-                            I'm an experienced programmer with experience in Java, Python 3, C++ among other languages.
+                            I'm an experienced programmer with experience in Java, C++, and Python 3 among other languages.
                             I also have an interest in engineering and the arts and have experience using Adobe Photoshop and Computer-Aided Design.
                             I am a team player and I am always looking to tackle new challenges whenever I can.
                         </p>
@@ -88,12 +90,12 @@
                     <h3>Skills</h3>
                 </div>
 
-                <div class="row">
+                <div class="row" data-aos="fade-right">
                     <div class="col-lg-6">
                         <ul class="skill-list">
                             <li><i class="icofont-rounded-right"></i> Skilled in Java</li>
                             <li><i class="icofont-rounded-right"></i> Skilled in C++</li>
-                            <li><i class="icofont-rounded-right"></i> Skilled in Python email@example.com</li>
+                            <li><i class="icofont-rounded-right"></i> Skilled in Python</li>
                           </ul>
                     </div>
                     <div class="col-lg-6">
@@ -105,6 +107,14 @@
                     </div>
                 </div>
 
+            </section>
+
+            <section id="projects">
+                <div class="section-title">
+                    <h3>Projects</h3>
+                </div>
+
+                
             </section>
         </main>
 

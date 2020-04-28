@@ -1,4 +1,7 @@
 /* General Stuff */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #272829;
@@ -10,7 +13,11 @@ h1, h3{
 }
 
 #main {
-  margin-left: 300px;
+  margin-left: 250px;
+}
+
+.prof-pic-rounded{
+  border-radius: 3%;
 }
 
 /* Header Stuff */
@@ -19,7 +26,7 @@ h1, h3{
   top: 0;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 250px;
   background: #413c3b;
 }
 
@@ -130,6 +137,37 @@ h1, h3{
   color: #fff;
 }
 
+/* General Section Stuff */
+section {
+  padding: 60px;
+  overflow: hidden;
+}
+
+.section-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section-title h3{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #fff;
+}
+
+.section-title h3::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 5px;
+  background: #8ca26c;
+  bottom: 0;
+  left: 0;
+}
+
 /* Hero */
 #hero {
   width: 100%;
@@ -156,7 +194,25 @@ h1, h3{
 /* About */
 #about {
   width: 100%;
-  height: 100vh;
   background-color: #413c3b;
-  opacity: 0;
+  color: #fff;
+}
+
+#about p {
+  font-size: 20px;
+}
+
+.skill-list{
+  list-style: none;
+}
+
+.skill-list > li {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+/* Projects */
+#projects {
+  width: 100%;
+  background-color: #413c3b;
 }
