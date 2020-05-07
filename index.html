@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1" name="viewport">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         
@@ -28,10 +28,13 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="main.js"></script>
 
+        <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
         <header id="header">
             <div class="d-flex flex-column">
-                <div class="profile">
-                    <img src="assets/img/profile-img.jpg" class="rounded-circle" alt="">
+        
+              <div class="profile">
+                <img src="assets/img/profile-img.jpg" class="rounded-circle" alt="">
                     <h3>Vinodh Nagarajan</h3>
 
                     <div class="media-links mt-3 text-center">
@@ -40,7 +43,7 @@
                         <a href="https://devpost.com/vinodh-n" class="twitter"><i class="bx bx-code-block"></i></a>
                     </div>
 
-                    <nav class="menu">
+                    <nav class="nav-menu">
                         <ul>
                             <li class="active"><a href="#hero"><i class="bx bx-home-alt"></i>Home</a></li>
                             <li><a href="#about"><i class="bx bx-info-circle"></i>About</a></li>
@@ -49,10 +52,10 @@
                             <li><a href="#contact"><i class="bx bx-conversation"></i>Contact</a></li>
                         </ul>
                     </nav>
-
+              <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+        
             </div>
-        </div>
-        </header>
+          </header><!-- End Header -->
 
         <main id="main">
             <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
@@ -114,10 +117,10 @@
                     <h3>Projects</h3>
                 </div>
                     <div class="row" data-aos="fade-left">
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <a href="https://github.com/vinodhn/A_Star_Pathfinding"><img src="assets/img/project-astar.jpeg" class="img-fluid project-img"></a>
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-lg-9">
                             <h2>A* Pathfinding Visualization</h2>
                             <p>
                                 A simple A* pathfinding algorithm visualizer. You can set the start, end, and wall nodes all
@@ -129,10 +132,10 @@
                     </div>
                     <br>
                     <div class="row" data-aos="fade-left">
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <a href="https://github.com/vinodhn/AP-Calculus-BC-Graphing-Calculator"><img src="assets/img/project-calc.jpeg" class="img-fluid project-img"></a>
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-lg-9">
                             <h2>JavaScript Graphing Calculator</h2>
                             <p>
                                 A simple, easy-to-use graphing calculator implemented in JavaScript. It can handle
@@ -144,10 +147,10 @@
                     </div>
                     <br>
                     <div class="row" data-aos="fade-left">
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <a href="https://devpost.com/software/musitapp"><img src="assets/img/project-musitapp.jpg" class="img-fluid project-img"></a>
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-lg-9">
                             <h2>MusiTapp - Knock-based Music Control</h2>
                             <p>
                                 An easy-to-use tool to control your Android phone's media output by knocking or
@@ -160,10 +163,10 @@
                     </div>
                     <br>
                     <div class="row" data-aos="fade-left">
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <a href="https://devpost.com/software/nutrifacts"><img src="assets/img/project-nutriscan.jpg" class="img-fluid project-img"></a>
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-lg-9">
                             <h2>NutriScan - Food Consumption Tracker</h2>
                             <p>
                                 An easy-to-use Android app + Web interface to keep track of one's caloric intake. The app makes

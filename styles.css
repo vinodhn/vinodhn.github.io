@@ -22,30 +22,42 @@ h1, h2, h3{
 
 /* Header Stuff */
 #header {
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  width: 250px;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
   background: #413c3b;
+  overflow-y: auto;
 }
 
 #header .profile img {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 5px solid #8ca26c
+  border: 5px solid #8ca26c;
 }
 
 #header .profile h3 {
   font-size: 22px;
   margin: 0;
   padding: 0;
+  font-weight: 600;
+  -moz-text-align-last: center;
   text-align-last: center;
-  color: #fff;
+  color: #fff
 }
 
-#header .media-links a{
+#header .profile h3 a, #header .profile h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .profile .media-links a {
   font-size: 18px;
   display: inline-block;
   background: #8ca26c;
@@ -57,30 +69,45 @@ h1, h2, h3{
   text-align: center;
   width: 36px;
   height: 36px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
-#header .profile .media-links a:hover {
+#header .profile .social-links a:hover {
   background: #c0cb6f;
   color: #fff;
   text-decoration: none;
 }
 
+#main {
+  margin-left: 250px;
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -250px;
+  }
+  #main {
+    margin-left: 0;
+  }
+}
+
 /* Nav Menu */
-.menu {
+.nav-menu {
   padding-top: 20px;
 }
 
-.menu * {
+.nav-menu * {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.menu > ul > li {
+.nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
 }
 
-.menu a {
+.nav-menu a {
   display: flex;
   align-items: center;
   color: #fff;
@@ -90,18 +117,18 @@ h1, h2, h3{
   font-size: 15px;
 }
 
-.menu a i {
+.nav-menu a i {
   font-size: 24px;
   padding-right: 8px;
   color: #8ca26c;
 }
 
-.menu a:hover, .menu .active > a, .menu li:hover > a {
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   text-decoration: none;
   color: #c0cb6f;
 }
-  
-.menu a:hover i, .menu .active > a i, .menu li:hover > a i {
+
+.nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
   color: #c0cb6f;
 }
 
@@ -122,7 +149,7 @@ h1, h2, h3{
 }
 
 .mobile-nav-toggle i {
-  color: #149ddd;
+  color: #413c3b;
 }
 
 .mobile-nav-active {
@@ -172,7 +199,7 @@ section {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("hero-bg.jpg") center;
+  background: url("assets/img/hero-bg.jpg") center;
   background-size: cover;
   opacity: 1;
 }
@@ -232,7 +259,7 @@ section {
 
 #projects .project-img{
   border-radius: 10px;
-  width: 33vh;
-  height: 33vh;
+  width: 40vh;
+  height: 40vh;
   object-fit: cover;
 }
