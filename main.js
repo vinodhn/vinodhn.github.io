@@ -1,42 +1,54 @@
-console.log("Hello!")
-function smoothTransitions() {
-  var scrollPos = $(document).scrollTop();
-  var targetOpacity = 1;
-  $('#hero').css({
-      'opacity': (1300-scrollPos)/1000
+!(function($) {
+  "use strict";
+
+
+  $(document).on('click', '.mobile-nav-toggle', function(e) {
+    $('body').toggleClass('mobile-nav-active');
+    $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
   });
-};
 
-function animateActiveSection(){
-  var navigationSections = $('section');
-  var currentSections = $('.menu, #mobile-nav');
-
-  $(window).scroll(function(){
-    var currentPos = $(document).scrollTop() + 10;
-
-    navigationSections.each(function(){
-      var top = $(this).offset().top;
-      var bottom = top + $(this).outerHeight();
-      
-      if(currentPos >= top && currentPos <= bottom){
-        if(currentPos <= bottom){
-          currentSections.find('li').removeClass('active');
-        }
-        currentSections.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
+  $(document).click(function(e) {
+    var container = $(".mobile-nav-toggle");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      if ($('body').hasClass('mobile-nav-active')) {
+        $('body').removeClass('mobile-nav-active');
+        $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
       }
-      if (currentPos < 200) {
-        $(".menu ul:first li:first").addClass('active');
-      }
-    })
-  })
-}
-
-$(function(){
-  AOS.init({
-    duration: 1000
+    }
   });
+
   $(window).scroll(function() {
-      smoothTransitions();
-      animateActiveSection();
+    var navigationSections = $('section');
+    var currentSections = $('.nav-menu, #mobile-nav');
+    console.log("hello1")
+    $(window).scroll(function() {
+      var currentPos = $(document).scrollTop() + 10;
+      console.log("hello2")
+
+      navigationSections.each(function(){
+        console.log("hello3")
+        var top = $(this).offset().top;
+        var bottom = top + $(this).outerHeight();
+
+        if(currentPos >= top && currentPos <= bottom){
+          if(currentPos <= bottom){
+            currentSections.find('li').removeClass('active');
+          }
+          currentSections.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
+        }
+
+        if (currentPos < 200) {
+          $(".nav-menu ul:first li:first").addClass('active');
+        }
+      })
+
+    });
+
   });
-});
+
+  // Initi AOS
+  AOS.init({
+    duration: 500
+  });
+
+})(jQuery);
