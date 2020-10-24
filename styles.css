@@ -225,15 +225,6 @@ section {
   font-size: 20px;
 }
 
-.skill-list{
-  list-style: none;
-}
-
-.skill-list > li {
-  font-size: 20px;
-  padding-bottom: 20px;
-}
-
 /* Projects */
 #projects {
   width: 100%;
@@ -258,4 +249,9 @@ section {
   width: 500px;
   height: 500px;
   object-fit: cover;
+}
+
+#resume {
+  width: 100%;
+  height: 100vh;
 }
