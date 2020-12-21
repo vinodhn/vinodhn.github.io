@@ -5,7 +5,13 @@ html {
 .profile img {
   margin: 15px auto;
   display: block;
-  width: 240px;
+  width: 15rem;
+}
+
+.edu img {
+  margin: 15px auto;
+  display: block;
+  width: 5rem;
 }
 
 .footer {
