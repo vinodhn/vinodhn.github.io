@@ -1,0 +1,23 @@
+{
+  "name": "vinodhn.github.io",
+  "version": "1.0.0",
+  "description": "Vinodh Nagarajan's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinodhn/vinodhn.github.io.git"
+  },
+  "author": "Vinodh Nagarajan (vinodhn)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinodhn/vinodhn.github.io/issues"
+  },
+  "homepage": "https://github.com/vinodhn/vinodhn.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1"
+  }
+}
